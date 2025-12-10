@@ -526,13 +526,7 @@ export default function WasteToValue() {
                 </div>
               </div>
 
-              {/* RAW OUTPUT */}
-              <div className="mt-4 card">
-                <h4 className="font-semibold mb-2">Raw AI Summary</h4>
-                <pre className="whitespace-pre-wrap text-sm text-secondary">
-                  {result.rawText}
-                </pre>
-              </div>
+              
             </motion.section>
           )}
         </div>

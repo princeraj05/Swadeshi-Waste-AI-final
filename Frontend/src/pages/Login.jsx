@@ -43,7 +43,7 @@ export default function Login() {
     } catch (err) {
       if (err.code === "auth/user-not-found") toast.error("User not found. Create an account.");
       else if (err.code === "auth/wrong-password") toast.error("Incorrect password.");
-      else toast.error(err.message);
+      else toast.error("Please Create an account first");
     }
 
     setLoading(false);
