@@ -1,4 +1,3 @@
-// backend/middleware/firebaseAuth.js
 const admin = require("../config/firebaseAdmin");
 
 module.exports = async (req, res, next) => {

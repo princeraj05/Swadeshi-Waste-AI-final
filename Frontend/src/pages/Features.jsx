@@ -75,4 +75,3 @@ export default function Features() {
   //   { title: "DIY Upcycle Tutorials", desc: "Simple tutorials to convert waste into useful products.", icon: "🛠" },
   //   { title: "Marketplace Ideas", desc: "Discover ways to sell your upcycled products.", icon: "🛒" },
   // ];
-

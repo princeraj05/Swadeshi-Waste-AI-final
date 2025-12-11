@@ -1,6 +1,3 @@
-
-
-// backend/controllers/wasteValueController.js
 const WasteValue = require("../models/WasteValue");
 const { OpenAI } = require("openai");
 const client = new OpenAI({

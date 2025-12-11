@@ -1,12 +1,8 @@
-
-
-// backend/controllers/chatController.js
 const axios = require("axios");
 const Chat = require("../models/Chat");
 
-// Keep your existing callGemini / callAI logic (I reused the OpenRouter approach you had).
 async function callGemini(prompt) {
-  const apiKey = process.env.OPENAI_API_KEY; // ensure set in .env
+  const apiKey = process.env.OPENAI_API_KEY; 
   if (!apiKey) throw new Error("OPENAI_API_KEY missing in .env");
 
   const url = "https://openrouter.ai/api/v1/chat/completions";
@@ -100,7 +96,7 @@ Educate users about nature, sustainability, pollution reduction, waste handling,
   }
 };
 
-// optional: getChats (history) — uses email param but will require matching Firebase email
+
 exports.getChats = async (req, res) => {
   try {
     const emailParam = req.params.email;

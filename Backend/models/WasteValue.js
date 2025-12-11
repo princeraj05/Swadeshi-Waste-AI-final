@@ -1,4 +1,4 @@
-// backend/models/WasteValue.js
+
 const mongoose = require("mongoose");
 
 const WasteValueSchema = new mongoose.Schema({

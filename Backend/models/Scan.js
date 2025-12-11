@@ -1,5 +1,3 @@
-
-// backend/models/Scan.js
 const mongoose = require("mongoose");
 
 const ScanSchema = new mongoose.Schema({
