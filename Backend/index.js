@@ -38,6 +38,5 @@ app.use("/api/support", contactRoutes);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
-  console.log(`🚀 Backend running on http://localhost:${PORT}`);
-  console.log("🌿 ENV Loaded:", Boolean(process.env.COHERE_API_KEY));
+  console.log(` Backend running on http://localhost:${PORT}`);
 });
