@@ -1,9 +1,8 @@
-// backend/config/firebaseAdmin.js
-const admin = require("firebase-admin");
-const path = require("path");
+// Backend/config/firebaseAdmin.js
 
-const serviceAccountPath = path.join(__dirname, "..", "firebaseServiceAccount.json");
-const serviceAccount = require(serviceAccountPath);
+const admin = require("firebase-admin");
+
+const serviceAccount = require("./firebaseServiceAccount.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
