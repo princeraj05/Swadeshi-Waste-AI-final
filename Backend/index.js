@@ -13,7 +13,7 @@ const contactRoutes = require("./routes/contactRoutes");
 
 const app = express();
 
-/* CORS FIX */
+/* CORS */
 app.use(
   cors({
     origin: [
@@ -25,6 +25,9 @@ app.use(
     credentials: true,
   })
 );
+
+/* PREFLIGHT FIX */
+app.options("*", cors());
 
 app.use(express.json({ limit: "20mb" }));
 
