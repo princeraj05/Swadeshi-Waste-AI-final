@@ -3,7 +3,7 @@ import axios from "axios";
 import { auth } from "../firebase";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE,
+  baseURL: "https://swadeshi-waste-ai-final.onrender.com/api",
   withCredentials: false, // firebase token will be sent in headers
 });
 
